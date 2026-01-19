@@ -21,14 +21,40 @@
 
 #prob 2: Greater than three numbers:
 
-a = int(input("Enter your no. : "));
-b = int(input("Enter your no. : "));
-c = int(input("Enter your no. : "));
+# a = int(input("Enter your no. : "));
+# b = int(input("Enter your no. : "));
+# c = int(input("Enter your no. : "));
 
-if a>=b and a>=c:
-    print("a is greatest")
-elif b>=a and b>=c:
-    print("b is greatest")
+# if a>=b and a>=c:
+#     print("a is greatest")
+# elif b>=a and b>=c:
+#     print("b is greatest")
+# else:
+#     print("c is greatest");
+
+#prob 3: simple calculator:
+
+a = float(input("Enter your no. : "));
+b = float(input("Enter your no. : "));
+
+print('''Choose one option from 1 to 4
+      1. +
+      2. - 
+      3. *
+      4. /''');
+
+choice = float(input("Enter your option: "));
+
+if choice == 1:
+    print(a+b);
+elif choice == 2:
+    print(a-b);
+elif choice == 3:
+    print(a*b);
+elif choice == 4:
+    if b==0:
+        print("Not defined")
+    else:
+        print(a/b);
 else:
-    print("c is greatest");
-
+    print("Error in output");
