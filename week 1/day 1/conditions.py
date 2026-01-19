@@ -74,19 +74,42 @@
 
 #prob 3: Loan approval (simple rules):
 
-age = int(input("Enter your age: "))
-monthlyIncome = int(input("Enter your Monthly Encome: "))
-familyIncome = int(input("Enter your Family Encome: "))
-credits = int(input("Enter your Credit: "))
+# age = int(input("Enter your age: "))
+# monthlyIncome = int(input("Enter your Monthly Encome: "))
+# familyIncome = int(input("Enter your Family Encome: "))
+# credits = int(input("Enter your Credit: "))
 
-if age>= 21 and monthlyIncome>=25000 and credits>=650:
-    print('''"You are eligible for loan!"
-your ROI is 8% per year''')
-elif age<21 and monthlyIncome>=25000 and credits>=650:
-    print('''You can apply for
-Students Education Loan!!
-At an ROI of 5 to 7 % per year.''')
-elif (monthlyIncome<25000 and familyIncome<25000) or credits<650:
-    print("You are not eligible for any loan.")
+# if age>= 21 and monthlyIncome>=25000 and credits>=650:
+#     print('''"You are eligible for loan!"
+# your ROI is 8% per year''')
+# elif age<21 and monthlyIncome>=25000 and credits>=650:
+#     print('''You can apply for
+# Students Education Loan!!
+# At an ROI of 5 to 7 % per year.''')
+# elif (monthlyIncome<25000 and familyIncome<25000) or credits<650:
+#     print("You are not eligible for any loan.")
+# else:
+#     print("Error")
+
+#rewriting one program without any help:
+#program 1: grading system:
+
+a = float(input("Enter your no. in Maths: "))
+b = float(input("Enter your no. in Chemistry: "))
+c = float(input("Enter your no. in Physics: "))
+d = float(input("Enter your no. in Hindi: "))
+e = float(input("Enter your no. in Physical.Edu: "))
+
+totalPer = (a+b+c+d+e)/5
+print(f"your total percentage is {totalPer}%.")
+
+if totalPer >= 85:
+    print("Your grade is A.")
+elif totalPer >= 70:
+    print("Your grade is B.")
+elif totalPer >= 55:
+    print("Your grade is C.")
+elif totalPer >= 40:
+    print("Your grade is D.")
 else:
-    print("Error")
+    print("Your is Failed!!")
