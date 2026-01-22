@@ -138,3 +138,19 @@
 #     print("Automorphic no.")
 # else:
 #     print("NOT Automorphic")
+
+#Harshad(niven) no. : no div by sum of its digits:
+
+num = int(input("Enter your no.: "))
+sum = 0
+dig = num
+
+while dig>0:
+    ldig = dig%10
+    sum = sum + ldig
+    dig = dig//10
+
+if num%sum==0:
+    print("Digit is Harshad no.")
+else:
+    print("Digit not Harshad no.")
