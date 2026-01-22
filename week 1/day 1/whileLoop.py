@@ -177,17 +177,27 @@
 # else:
 #     print("Not Krishnamurthy no.")
 
-#####Prime no.:
+# #####Prime no.:
 
-num = int(input("Enter the no.: "))
-isPrime = True
+# num = int(input("Enter the no.: "))
+# isPrime = True
 
-for i in range(2,num):
-    if num%i==0:
-        isPrime = False
-        break
+# for i in range(2,num):
+#     if num%i==0:
+#         isPrime = False
+#         break
 
-if isPrime:
-    print("No. is Prime")
-else:
-    print("No. is not prime")
+# if isPrime:
+#     print("No. is Prime")
+# else:
+#     print("No. is not prime")
+
+# # Factorial Program:
+
+# num = int(input("Enter your no.: "))
+# i = 1
+# fact = 1
+# while i<num+1:
+#     fact = fact*i
+#     i += 1
+# print(f"FACTORIAL of num is : {fact}")
