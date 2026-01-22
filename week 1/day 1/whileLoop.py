@@ -111,19 +111,30 @@
 #     print(f"Entred no {num} is not neon no.")
 
 
-#spy no: sum of digits equal to product of digit: ex 123:
+# #spy no: sum of digits equal to product of digit: ex 123:
 
-num = int(input("Enter your no.: "))
-dig = num
-sum = 0
-pro = 1
-while dig>0:
-    dig1 = dig%10
-    sum = sum + dig1
-    pro = pro*dig1
-    dig = dig//10
+# num = int(input("Enter your no.: "))
+# dig = num
+# sum = 0
+# pro = 1
+# while dig>0:
+#     dig1 = dig%10
+#     sum = sum + dig1
+#     pro = pro*dig1
+#     dig = dig//10
 
-if sum == pro:
-    print("Neon no.")
-else:
-    print("Not Neon no.")
+# if sum == pro:
+#     print("Neon no.")
+# else:
+#     print("Not Neon no.")
+
+# Automorphic no.: a number whose square ends with the original number itself
+
+# num = int(input("Enter your no. : "))
+# sq = num**2
+# ldig = sq%10
+
+# if ldig == num:
+#     print("Automorphic no.")
+# else:
+#     print("NOT Automorphic")
