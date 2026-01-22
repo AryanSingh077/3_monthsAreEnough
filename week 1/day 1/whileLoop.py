@@ -204,14 +204,38 @@
 
 # HCD of a num:
 
-a = int(input("Enter no.1: "))
-b = int(input("Enter no.2: "))
+# a = int(input("Enter no.1: "))
+# b = int(input("Enter no.2: "))
 
-num1, num2 = a, b
+# num1, num2 = a, b
 
-while b>0:
-    var = b
-    b = a%b
-    a = var
+# while b>0:
+#     var = b
+#     b = a%b
+#     a = var
 
-print(f"HCD of {num1} and {num2} is {var}")
+# print(f"HCD of {num1} and {num2} is {var}")
+
+# Tribonnaci series: a sequence of numbers where each term is the sum of the three preceding terms, generalizing the Fibonacci sequence (which sums two)
+
+n = int(input("How many terms: "))
+
+a = 0
+b = 0
+c = 1
+
+if n<=0:
+    print("Enter positive value")
+elif n == 1:
+    print(a)
+elif n == 2:
+    print(a,b)
+else:
+    print(a,b,c, end=" ")
+    for i in range (4, n+1):
+        nxTerm = a+b+c
+        print(nxTerm, end=" ")
+
+        a = b
+        b = c
+        c = nxTerm
