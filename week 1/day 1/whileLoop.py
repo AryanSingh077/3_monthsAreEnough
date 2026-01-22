@@ -96,16 +96,34 @@
 
 #Neon no.: a number where the sum of the digits of its square equals the original number itself:
 
-num = int(input("Enter the no.: "))
-sq = num**2
-sum = 0
-anoSq = sq
-while anoSq>0:
-    dig = anoSq%10
-    sum = sum + dig
-    anoSq = anoSq //10
+# num = int(input("Enter the no.: "))
+# sq = num**2
+# sum = 0
+# anoSq = sq
+# while anoSq>0:
+#     dig = anoSq%10
+#     sum = sum + dig
+#     anoSq = anoSq //10
 
-if sum == num:
-    print(f"Entered no {num} is Neon no.")
+# if sum == num:
+#     print(f"Entered no {num} is Neon no.")
+# else:
+#     print(f"Entred no {num} is not neon no.")
+
+
+#spy no: sum of digits equal to product of digit: ex 123:
+
+num = int(input("Enter your no.: "))
+dig = num
+sum = 0
+pro = 1
+while dig>0:
+    dig1 = dig%10
+    sum = sum + dig1
+    pro = pro*dig1
+    dig = dig//10
+
+if sum == pro:
+    print("Neon no.")
 else:
-    print(f"Entred no {num} is not neon no.")
+    print("Not Neon no.")
