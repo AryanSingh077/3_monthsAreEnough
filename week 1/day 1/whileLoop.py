@@ -141,16 +141,38 @@
 
 #Harshad(niven) no. : no div by sum of its digits:
 
-num = int(input("Enter your no.: "))
+# num = int(input("Enter your no.: "))
+# sum = 0
+# dig = num
+
+# while dig>0:
+#     ldig = dig%10
+#     sum = sum + ldig
+#     dig = dig//10
+
+# if num%sum==0:
+#     print("Digit is Harshad no.")
+# else:
+#     print("Digit not Harshad no.")
+
+#krishnamurthy no.: a number where the sum of the factorials of its digits is equal to the original number itself.
+
+num = int(input("Enter your no."))
+
 sum = 0
 dig = num
 
-while dig>0:
+while dig > 0:
     ldig = dig%10
-    sum = sum + ldig
+    i = 1
+    fact = 1
+    while i<ldig+1:
+        fact = fact*i
+        i +=1
+    sum = sum + fact
     dig = dig//10
 
-if num%sum==0:
-    print("Digit is Harshad no.")
+if sum == num:
+    print("Krishnamurthy no.")
 else:
-    print("Digit not Harshad no.")
+    print("Not Krishnamurthy no.")
