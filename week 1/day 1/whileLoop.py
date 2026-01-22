@@ -157,22 +157,37 @@
 
 #krishnamurthy no.: a number where the sum of the factorials of its digits is equal to the original number itself.
 
-num = int(input("Enter your no."))
+# num = int(input("Enter your no."))
 
-sum = 0
-dig = num
+# sum = 0
+# dig = num
 
-while dig > 0:
-    ldig = dig%10
-    i = 1
-    fact = 1
-    while i<ldig+1:
-        fact = fact*i
-        i +=1
-    sum = sum + fact
-    dig = dig//10
+# while dig > 0:
+#     ldig = dig%10
+#     i = 1
+#     fact = 1
+#     while i<ldig+1:
+#         fact = fact*i
+#         i +=1
+#     sum = sum + fact
+#     dig = dig//10
 
-if sum == num:
-    print("Krishnamurthy no.")
+# if sum == num:
+#     print("Krishnamurthy no.")
+# else:
+#     print("Not Krishnamurthy no.")
+
+#####Prime no.:
+
+num = int(input("Enter the no.: "))
+isPrime = True
+
+for i in range(2,num):
+    if num%i==0:
+        isPrime = False
+        break
+
+if isPrime:
+    print("No. is Prime")
 else:
-    print("Not Krishnamurthy no.")
+    print("No. is not prime")
