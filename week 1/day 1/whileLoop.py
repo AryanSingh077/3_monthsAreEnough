@@ -201,3 +201,19 @@
 #     fact = fact*i
 #     i += 1
 # print(f"FACTORIAL of num is : {fact}")
+
+# HCD of a num:
+
+a = int(input("Enter no.1: "))
+b = int(input("Enter no.2: "))
+
+num1, num2 = a, b
+
+while b>0:
+    dig = b
+    b = a%b
+    a = dig
+
+HCD = a
+
+print(f"HCD of {num1} and {num2} is {HCD}.")
