@@ -49,7 +49,52 @@
     
 # prob3:infinte loop fixing:
 
-i = 0
-while i<=5:
-    print(i)
-    i += 1
+# i = 0
+# while i<=5:
+#     print(i)
+#     i += 1
+
+# pelindrome no.
+
+# n = int(input("Enter the no. : "))
+# revN = 0
+
+# while n > 0:
+#     lDig = n%10 
+#     revN = revN*10 + lDig
+#     n = n//10
+# print(revN)
+
+#Buzz no: a no which ends with 7 or is divisible by 7:
+
+# n = int(input("Enter your no. :"))
+
+# if n % 10 == 7 or n % 7 == 0:
+#     print("Entered no is Buzz no.")
+# else:
+#     print("Entered  no is not buzz no.")
+
+##Armstrong no.: ex 153, a number that equals the sum of its own digits, each raised to the power of the total number of digits in the number
+
+# n = int(input("Enter your no.: "))
+
+# ldig = n%10
+
+#Perfect no.: finds if a number is "perfect," meaning it equals the sum of its own proper divisors (factors excluding itself)
+
+# pNo = int(input("Enter your no.: "))
+# sum = 0
+# for i in range(1, pNo+1):
+#     if pNo % i == 0 and i<pNo:
+#         num = i
+#         sum = sum + i
+
+# if sum == pNo:
+#     print("No. is perfect no. ")
+# else:
+#     print("No. is not perfect")
+
+#Neon no.: a number where the sum of the digits of its square equals the original number itself:
+
+num = int(input("Emter the no.: "))
+sq = num**2
