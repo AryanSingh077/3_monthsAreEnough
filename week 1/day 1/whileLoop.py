@@ -210,10 +210,8 @@ b = int(input("Enter no.2: "))
 num1, num2 = a, b
 
 while b>0:
-    dig = b
+    var = b
     b = a%b
-    a = dig
+    a = var
 
-HCD = a
-
-print(f"HCD of {num1} and {num2} is {HCD}.")
+print(f"HCD of {num1} and {num2} is {var}")
